@@ -1,0 +1,153 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" rel="stylesheet">
+    <title>Random Quote Generator</title>
+</head>
+<body>
+
+    <nav class="navbar fixed-top">
+            <div class="search-bar-container">
+                    <input class="author_search" id="authorsearch" type="text" placeholder="Search by authors, tags" name="q"  onfocus="this.value=''">
+                    <button class="search-author" id="search_tag"><i class="fa fa-search btn"></i></button>
+            </div>
+    </nav>
+
+    <div class="container justify-content-center">
+        
+        <div class="quote-box">
+            <div class="header">
+                Quote of the day
+            </div>
+            
+            <div class="quote-area">
+                <i class="fas fa-quote-left"></i>
+                <p id="advice"></p>
+                <i class="fas fa-quote-right"></i>
+            </div>
+            <div class="author">
+                <span>__</span>
+                  <button style="outline: none; border: none; background: transparent;" class="author_name"><span class="name" id="authorname">Name</span></button>
+
+
+            </div>
+            <div class="row buttons">
+                <div class="col-md-8 features justify-content-start">
+                    <ul class="col-md-8 features row justify-content-start align-items-center">
+                        <li class="sound col-1 col-md-4"><i class="fas fa-volume-up"></i></li>
+                        <li class="twitter col-1 col-md-4"><i class="fab fa-twitter"></i></li>
+                        <li class="instagram col-1 col-md-4"><i class="fab fa-instagram"></i></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 new-button">
+                    <button class="new-quote-button">New Quote</button>
+                </div>
+                
+            </div>
+        </div>
+
+
+        <div class="quote-table active">
+          <table class="table table-bordered">
+              <tbody id="author_details_table">
+                <!-- <tr>
+                  <th>Name</th>
+                    <td></td>
+                </tr>
+                <tr>
+                  <th>Biography</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>Description</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>Link</th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>Slug</th>
+                  <td></td>
+                </tr> -->
+              </tbody>
+            </table> 
+      </div>
+
+      <div class="quote-table tag-table active " id="table-data">
+        <!-- <table class="table  table-bordered" id="table-data"> -->
+                <!-- <thead>
+                  <tr>
+                    <th scope="col">No.</th>
+                    <th scope="col">Quote</th>
+                    <th scope="col">Tag</th>
+                    <th scope="col">Date</th>
+                  </tr>
+                </thead>
+                <tbody id="table-data"> -->
+                  <!-- <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                  </tr> -->
+                <!-- </tbody>
+              </table> -->
+      </div>
+
+      <div class="quote-table active tags-table" id="quotes-by-tags">
+        <!-- <table class="table  table-bordered" id="quotes-by-tags"> -->
+                <!-- <thead>
+                  <tr>
+                    <th scope="col">No.</th>
+                    <th scope="col">Quote</th>
+                    <th scope="col">Tag</th>
+                    <th scope="col">Date</th>
+                  </tr>
+                </thead>
+                <tbody id="table-data"> -->
+                  <!-- <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                  </tr> -->
+                <!-- </tbody>
+              </table> -->
+      </div>
+
+        
+
+    </div>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="quote.js"></script>
+</body>
+</html>
